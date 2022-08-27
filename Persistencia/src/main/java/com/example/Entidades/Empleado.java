@@ -17,6 +17,7 @@ public class Empleado{
     @OneToMany(mappedBy="empleado")
     private List<Movimiento> movimientoList;
 
+    //AGREGO ESTE COMENTARIO
     public String getName() {
         return name;
     }
@@ -28,6 +29,14 @@ public class Empleado{
     public Empleado(){
 
     }
-
-
+    //AGREGO TO STRING
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", movimientoList=" + movimientoList +
+                '}';
+    }
 }
