@@ -14,6 +14,11 @@ public class PersistenciaApplication {
 		Empleado empleado1 = new Empleado();
 		empleado1.setName("Pedro");
 		System.out.println("RESULTADO DEL NOMBRE DEL EMPLEADO 1: "+empleado1.getName());
+
+		//Creo empleado 2
+		Empleado empleado2 = new Empleado();
+		empleado2.setName("Daniel");
+		System.out.println("RESULTADO DEL NOMBRE DEL EMPLEADO 2: "+empleado2.getName());
 	}
 
 }
